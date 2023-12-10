@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vistas.RegistrosManuales">
+
+    <LinearLayout
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        android:layout_width="365dp"
+        android:layout_height="666dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de ingreso de Sinisestros"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/txtCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el codigo del siniestro"/>
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre del sensor"/>
+
+        <EditText
+            android:id="@+id/txtDueño"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la fecha en formato DD/MM/AAAA"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/txtDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la sede del siniestro"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/txtDireccion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el laboratorio del siniestro"
+            android:minHeight="48dp" />
+
+        <Button
+            android:onClick="guardarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Datos"/>
+
+        <Button
+            android:onClick="CargarListaFirestore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cargar Datos"/>
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="199dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

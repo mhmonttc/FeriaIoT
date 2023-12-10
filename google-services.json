@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "238428893761",
+    "project_id": "feriaiot2023",
+    "storage_bucket": "feriaiot2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238428893761:android:886d79604f9ba03d750cc0",
+        "android_client_info": {
+          "package_name": "com.mhmc.feriaiot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB69g9GktTd7EF9CDepkAYvhFegBCEBUxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
